@@ -1,0 +1,10 @@
+{
+  "homepage": "https://github.com/SilversShade/advancement-1.16.5/updatechecker.json",
+  "1.16.5": {
+    "0.0.1": "Nothing has been added, setting basic stuff"
+  },
+  "promos": {
+    "1.16.5-latest": "0.0.1",
+    "1.16.5-recommended": "0.0.1"
+  }
+}
