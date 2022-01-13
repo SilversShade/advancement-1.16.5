@@ -2,7 +2,9 @@ package advancement.registries;
 
 import advancement.AdvancementMod;
 import advancement.blocks.BlockMod;
+import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
+import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -18,18 +20,23 @@ import java.util.*;
 @ObjectHolder(AdvancementMod.MOD_ID)
 public class BlockRegistry {
     private static final int IRON_HARV = 2;
-    private static final List<Block> blocks = new ArrayList<Block>();
+    private static final List<Block> blocks = new ArrayList<>();
 
     //ore
     @ObjectHolder("amethyst_ore")
     public static final Block amethyst_ore = null;
+    @ObjectHolder("platinum_ore")
+    public static final Block platinum_ore = null;
+    @ObjectHolder("ruby_ore")
+    public static final Block ruby_ore = null;
 
     @SubscribeEvent
     public static void registerBlocks(final RegistryEvent.Register<Block> e) {
         AdvancementMod.LOGGER.info("[Advancement Mod] Registering Blocks");
 
-        register(e, new BlockMod("amethyst_ore", Block.Properties.of(Material.STONE).requiresCorrectToolForDrops().harvestLevel(IRON_HARV).harvestTool(ToolType.PICKAXE).strength(3.0F, 2000.0f)));
-
+        register(e, new BlockMod("amethyst_ore", Block.Properties.of(Material.STONE).requiresCorrectToolForDrops().harvestLevel(IRON_HARV).harvestTool(ToolType.PICKAXE).strength(2.0F, 2000.0f).sound(SoundType.METAL)));
+        register(e, new BlockMod("ruby_ore", Block.Properties.of(Material.STONE).requiresCorrectToolForDrops().harvestLevel(IRON_HARV).harvestTool(ToolType.PICKAXE).strength(2.0F, 2000.0f).sound(SoundType.METAL)));
+        register(e, new BlockMod("platinum_ore", Block.Properties.of(Material.STONE).requiresCorrectToolForDrops().harvestLevel(IRON_HARV).harvestTool(ToolType.PICKAXE).strength(3.0F, 2000.0f).sound(SoundType.METAL)));
     }
 
     private static void register(RegistryEvent.Register<Block> event, Block block) {

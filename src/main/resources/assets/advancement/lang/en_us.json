@@ -1,7 +1,11 @@
 {
   "item.advancement.amethyst": "Amethyst",
+  "item.advancement.ruby": "Ruby",
   "item.advancement.platinum_ingot": "Platinum Ingot",
+
   "block.advancement.amethyst_ore": "Amethyst Ore",
+  "block.advancement.platinum_ore": "Platinum Ore",
+  "block.advancement.ruby_ore": "Ruby Ore",
 
   "itemGroup.AdvancementMod": "Advancement Mod"
 }
