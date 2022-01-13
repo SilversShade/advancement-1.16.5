@@ -9,9 +9,13 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.ObjectHolder;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Mod.EventBusSubscriber(modid = AdvancementMod.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
 @ObjectHolder(AdvancementMod.MOD_ID)
 public class ItemRegistry {
+    //public static final List<Item> itemList = new ArrayList<>();
 
     //overworld ore
     @ObjectHolder("amethyst")

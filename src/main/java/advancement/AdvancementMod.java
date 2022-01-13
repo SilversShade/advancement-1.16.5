@@ -3,6 +3,7 @@ package advancement;
 import advancement.registries.AdvancementTab;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.item.ItemGroup;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -24,6 +25,7 @@ public class AdvancementMod
 {
     public static final String MOD_ID = "advancement";
     public static final Logger LOGGER = LogManager.getLogger();
+    public static final ItemGroup ADVANCEMENT_TAB = new AdvancementTab("advancement_mod");
 
     public AdvancementMod() {
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();

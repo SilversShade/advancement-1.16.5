@@ -20,6 +20,7 @@ import java.util.*;
 @ObjectHolder(AdvancementMod.MOD_ID)
 public class BlockRegistry {
     private static final int IRON_HARV = 2;
+    public static List<Item> blockItems = new ArrayList<>();
     private static final List<Block> blocks = new ArrayList<>();
 
     //ore
@@ -46,9 +47,10 @@ public class BlockRegistry {
 
     @SubscribeEvent
     public static void registerBlocksAsItems(final RegistryEvent.Register<Item> registry) {
-        Item.Properties properties = new Item.Properties().tab(AdvancementTab.advancement_tab);
+        Item.Properties properties = new Item.Properties().tab(AdvancementMod.ADVANCEMENT_TAB);
         for (Block block : blocks) {
             Item itemBlock = new BlockItem(block, properties).setRegistryName(block.getRegistryName());
+            blockItems.add(itemBlock);
             registry.getRegistry().register(itemBlock);
         }
     }

@@ -17,11 +17,11 @@ public class OreGen {
     public static void generateOres(final BiomeLoadingEvent event) {
         if (!event.getCategory().equals(Biome.Category.THEEND) && !event.getCategory().equals(Biome.Category.NETHER)) {
             oreGen(event.getGeneration(), OreFeatureConfig.FillerBlockType.NATURAL_STONE,
-                    BlockRegistry.amethyst_ore.defaultBlockState(), 4, 10, 35, 8);
+                    BlockRegistry.amethyst_ore.defaultBlockState(), 3, 10, 35, 8);
             oreGen(event.getGeneration(), OreFeatureConfig.FillerBlockType.NATURAL_STONE,
-                    BlockRegistry.ruby_ore.defaultBlockState(), 4, 10, 35, 8);
+                    BlockRegistry.ruby_ore.defaultBlockState(), 3, 10, 35, 8);
             oreGen(event.getGeneration(), OreFeatureConfig.FillerBlockType.NATURAL_STONE,
-                    BlockRegistry.platinum_ore.defaultBlockState(), 3, 5, 20, 4);
+                    BlockRegistry.platinum_ore.defaultBlockState(), 2, 5, 20, 4);
         }
     }
 

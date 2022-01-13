@@ -7,5 +7,5 @@
   "block.advancement.platinum_ore": "Платиновая руда",
   "block.advancement.ruby_ore": "Рубиновая руда",
 
-  "itemGroup.AdvancementMod": "Advancement Mod"
+  "itemGroup.advancement_mod": "Advancement Mod"
 }
