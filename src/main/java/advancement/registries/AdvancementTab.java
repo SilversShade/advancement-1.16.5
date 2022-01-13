@@ -25,6 +25,8 @@ public class AdvancementTab extends ItemGroup {
             itemsToFill.add(itemBlock.getDefaultInstance());
         itemsToFill.add(ItemRegistry.amethyst.getDefaultInstance());
         itemsToFill.add(ItemRegistry.ruby.getDefaultInstance());
+        itemsToFill.add(ItemRegistry.sapphire.getDefaultInstance());
         itemsToFill.add(ItemRegistry.platinum_ingot.getDefaultInstance());
+
     }
 }

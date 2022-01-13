@@ -1,11 +1,13 @@
 {
   "item.advancement.amethyst": "Аметист",
   "item.advancement.ruby": "Рубин",
+  "item.advancement.sapphire": "Сапфир",
   "item.advancement.platinum_ingot": "Платиновый слиток",
 
   "block.advancement.amethyst_ore": "Аметистовая руда",
   "block.advancement.platinum_ore": "Платиновая руда",
   "block.advancement.ruby_ore": "Рубиновая руда",
+  "block.advancement.sapphire_ore": "Сапфировая руда",
 
   "itemGroup.advancement_mod": "Advancement Mod"
 }

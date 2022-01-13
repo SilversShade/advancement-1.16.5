@@ -15,13 +15,14 @@ import java.util.List;
 @Mod.EventBusSubscriber(modid = AdvancementMod.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
 @ObjectHolder(AdvancementMod.MOD_ID)
 public class ItemRegistry {
-    //public static final List<Item> itemList = new ArrayList<>();
 
     //overworld ore
     @ObjectHolder("amethyst")
     public static final Item amethyst = null;
     @ObjectHolder("ruby")
     public static final Item ruby = null;
+    @ObjectHolder("sapphire")
+    public static final Item sapphire = null;
     @ObjectHolder("platinum_ingot")
     public static final Item platinum_ingot = null;
 
@@ -32,6 +33,7 @@ public class ItemRegistry {
         register(e, new ItemMod("amethyst"));
         register(e, new ItemMod("ruby"));
         register(e, new ItemMod("platinum_ingot"));
+        register(e, new ItemMod("sapphire"));
     }
 
     private static void register(RegistryEvent.Register<Item> event, Item item) {

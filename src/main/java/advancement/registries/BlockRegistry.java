@@ -28,6 +28,8 @@ public class BlockRegistry {
     public static final Block amethyst_ore = null;
     @ObjectHolder("ruby_ore")
     public static final Block ruby_ore = null;
+    @ObjectHolder("sapphire_ore")
+    public static final Block sapphire_ore = null;
     @ObjectHolder("platinum_ore")
     public static final Block platinum_ore = null;
 
@@ -37,6 +39,7 @@ public class BlockRegistry {
 
         register(e, new BlockMod("amethyst_ore", Block.Properties.of(Material.STONE).requiresCorrectToolForDrops().harvestLevel(IRON_HARV).harvestTool(ToolType.PICKAXE).strength(2.0F, 2000.0f).sound(SoundType.METAL)));
         register(e, new BlockMod("ruby_ore", Block.Properties.of(Material.STONE).requiresCorrectToolForDrops().harvestLevel(IRON_HARV).harvestTool(ToolType.PICKAXE).strength(2.0F, 2000.0f).sound(SoundType.METAL)));
+        register(e, new BlockMod("sapphire_ore", Block.Properties.of(Material.STONE).requiresCorrectToolForDrops().harvestLevel(IRON_HARV).harvestTool(ToolType.PICKAXE).strength(2.0F, 2000.0f).sound(SoundType.METAL)));
         register(e, new BlockMod("platinum_ore", Block.Properties.of(Material.STONE).requiresCorrectToolForDrops().harvestLevel(IRON_HARV).harvestTool(ToolType.PICKAXE).strength(3.0F, 2000.0f).sound(SoundType.METAL)));
     }
 
