@@ -16,10 +16,10 @@ public class ItemRegistry {
     //overworld ore
     @ObjectHolder("amethyst")
     public static final Item amethyst = null;
-    @ObjectHolder("platinum_ingot")
-    public static final Item platinum_ingot = null;
     @ObjectHolder("ruby")
     public static final Item ruby = null;
+    @ObjectHolder("platinum_ingot")
+    public static final Item platinum_ingot = null;
 
     @SubscribeEvent
     public static void registerItems(final RegistryEvent.Register<Item> e) {

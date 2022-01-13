@@ -25,10 +25,10 @@ public class BlockRegistry {
     //ore
     @ObjectHolder("amethyst_ore")
     public static final Block amethyst_ore = null;
-    @ObjectHolder("platinum_ore")
-    public static final Block platinum_ore = null;
     @ObjectHolder("ruby_ore")
     public static final Block ruby_ore = null;
+    @ObjectHolder("platinum_ore")
+    public static final Block platinum_ore = null;
 
     @SubscribeEvent
     public static void registerBlocks(final RegistryEvent.Register<Block> e) {

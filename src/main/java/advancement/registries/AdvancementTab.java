@@ -3,6 +3,7 @@ package advancement.registries;
 import advancement.AdvancementMod;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
+import org.omg.CORBA.PUBLIC_MEMBER;
 
 public class AdvancementTab {
     public static final ItemGroup advancement_tab = new ItemGroup("AdvancementMod") {
