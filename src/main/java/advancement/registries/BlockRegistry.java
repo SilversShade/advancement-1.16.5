@@ -20,6 +20,9 @@ import java.util.*;
 @ObjectHolder(AdvancementMod.MOD_ID)
 public class BlockRegistry {
     private static final int IRON_HARV = 2;
+    private static final int DIAMOND_HARV = 3;
+    private static final int NETHERITE_HARV = 4;
+
     public static List<Item> blockItems = new ArrayList<>();
     private static final List<Block> blocks = new ArrayList<>();
 
