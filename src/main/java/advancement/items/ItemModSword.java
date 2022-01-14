@@ -6,8 +6,8 @@ import net.minecraft.item.Item;
 import net.minecraft.item.SwordItem;
 
 public class ItemModSword extends SwordItem {
-    public ItemModSword (IItemTier tier, String name) {
-        super(tier, 3, 1.6f, new Item.Properties().tab(AdvancementMod.ADVANCEMENT_TAB));
+    public ItemModSword (IItemTier tier, String name, float attackSpeedModifier) {
+        super(tier, 3, attackSpeedModifier, new Item.Properties().tab(AdvancementMod.ADVANCEMENT_TAB));
         setRegistryName(name);
     }
 }

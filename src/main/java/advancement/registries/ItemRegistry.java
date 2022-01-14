@@ -46,9 +46,9 @@ public class ItemRegistry {
         register(e, new ItemMod("ruby"));
         register(e, new ItemMod("platinum_ingot"));
         register(e, new ItemMod("sapphire"));
-        register(e, new ItemModPickaxe(AdvancementTools.THREE_CRYSTAL_PICKAXE, "three_crystal_pickaxe"));
-        register(e, new ItemModSword(AdvancementTools.THREE_CRYSTAL_SWORD, "three_crystal_sword"));
-        register(e, new ItemModAxe(AdvancementTools.THREE_CRYSTAL_AXE, "three_crystal_axe"));
+        register(e, new ItemModPickaxe(AdvancementTools.THREE_CRYSTAL_PICKAXE, "three_crystal_pickaxe", -1.4f));
+        register(e, new ItemModSword(AdvancementTools.THREE_CRYSTAL_SWORD, "three_crystal_sword", 1.6f));
+        register(e, new ItemModAxe(AdvancementTools.THREE_CRYSTAL_AXE, "three_crystal_axe", -2.3f));
     }
 
     private static void register(RegistryEvent.Register<Item> event, Item item) {
