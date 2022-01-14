@@ -2,6 +2,7 @@ package advancement.registries;
 
 import advancement.AdvancementMod;
 import advancement.items.ItemMod;
+import advancement.items.ItemModAxe;
 import advancement.items.ItemModPickaxe;
 import advancement.items.ItemModSword;
 import advancement.util.AdvancementTools;
@@ -34,6 +35,8 @@ public class ItemRegistry {
     public static final Item three_crystal_pickaxe = null;
     @ObjectHolder("three_crystal_sword")
     public static final Item three_crystal_sword = null;
+    @ObjectHolder("three_crystal_axe")
+    public static final Item three_crystal_axe = null;
 
     @SubscribeEvent
     public static void registerItems(final RegistryEvent.Register<Item> e) {
@@ -45,6 +48,7 @@ public class ItemRegistry {
         register(e, new ItemMod("sapphire"));
         register(e, new ItemModPickaxe(AdvancementTools.THREE_CRYSTAL_PICKAXE, "three_crystal_pickaxe"));
         register(e, new ItemModSword(AdvancementTools.THREE_CRYSTAL_SWORD, "three_crystal_sword"));
+        register(e, new ItemModAxe(AdvancementTools.THREE_CRYSTAL_AXE, "three_crystal_axe"));
     }
 
     private static void register(RegistryEvent.Register<Item> event, Item item) {

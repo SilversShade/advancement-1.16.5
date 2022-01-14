@@ -13,6 +13,9 @@ public enum AdvancementTools implements IItemTier {
     }),
     THREE_CRYSTAL_SWORD(4, 3000, 4.0f, 15.0f, 15, () -> {
         return Ingredient.of(ItemRegistry.platinum_ingot);
+    }),
+    THREE_CRYSTAL_AXE(4, 3000, 15.0f, 9.0f, 15, () -> {
+        return Ingredient.of(ItemRegistry.platinum_ingot);
     });
 
     private final int harvestLevel;
