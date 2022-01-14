@@ -3,6 +3,7 @@ package advancement.registries;
 import advancement.AdvancementMod;
 import advancement.items.ItemMod;
 import advancement.items.ItemModPickaxe;
+import advancement.items.ItemModSword;
 import advancement.util.AdvancementTools;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
@@ -31,6 +32,8 @@ public class ItemRegistry {
     //three-crystal items
     @ObjectHolder("three_crystal_pickaxe")
     public static final Item three_crystal_pickaxe = null;
+    @ObjectHolder("three_crystal_sword")
+    public static final Item three_crystal_sword = null;
 
     @SubscribeEvent
     public static void registerItems(final RegistryEvent.Register<Item> e) {
@@ -41,6 +44,7 @@ public class ItemRegistry {
         register(e, new ItemMod("platinum_ingot"));
         register(e, new ItemMod("sapphire"));
         register(e, new ItemModPickaxe(AdvancementTools.THREE_CRYSTAL_PICKAXE, "three_crystal_pickaxe"));
+        register(e, new ItemModSword(AdvancementTools.THREE_CRYSTAL_SWORD, "three_crystal_sword"));
     }
 
     private static void register(RegistryEvent.Register<Item> event, Item item) {
