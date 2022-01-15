@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PHP",
+    "APR",
+    " S "
+  ],
+  "key": {
+    "S": {
+      "item": "minecraft:stick"
+    },
+    "A": {
+      "item": "advancement:amethyst"
+    },
+    "R": {
+      "item": "advancement:ruby"
+    },
+    "H": {
+      "item": "advancement:sapphire"
+    },
+    "P": {
+      "item": "advancement:platinum_ingot"
+    }
+  },
+  "result": {
+    "item": "advancement:three_crystal_axe"
+  }
+}

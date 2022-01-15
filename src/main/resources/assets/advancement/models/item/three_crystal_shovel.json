@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "advancement:item/three_crystal_shovel"
+  }
+}

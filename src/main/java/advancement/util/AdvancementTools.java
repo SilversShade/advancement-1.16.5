@@ -8,13 +8,16 @@ import net.minecraft.item.crafting.Ingredient;
 import java.util.function.Supplier;
 
 public enum AdvancementTools implements IItemTier {
-    THREE_CRYSTAL_PICKAXE(4, 3000, 15.0f, 5.0f, 15, () -> {
+    THREE_CRYSTAL_PICKAXE(4, 3000, 15.0f, 4.0f, 15, () -> {
         return Ingredient.of(ItemRegistry.platinum_ingot);
     }),
     THREE_CRYSTAL_SWORD(4, 3000, 4.0f, 15.0f, 15, () -> {
         return Ingredient.of(ItemRegistry.platinum_ingot);
     }),
     THREE_CRYSTAL_AXE(4, 3000, 15.0f, 9.0f, 15, () -> {
+        return Ingredient.of(ItemRegistry.platinum_ingot);
+    }),
+    THREE_CRYSTAL_SHOVEL(4, 3000, 15.0f, 4.0f, 15, () -> {
         return Ingredient.of(ItemRegistry.platinum_ingot);
     });
 

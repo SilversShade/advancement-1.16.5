@@ -30,5 +30,6 @@ public class AdvancementTab extends ItemGroup {
         itemsToFill.add(ItemRegistry.three_crystal_sword.getDefaultInstance());
         itemsToFill.add(ItemRegistry.three_crystal_pickaxe.getDefaultInstance());
         itemsToFill.add(ItemRegistry.three_crystal_axe.getDefaultInstance());
+        itemsToFill.add(ItemRegistry.three_crystal_shovel.getDefaultInstance());
     }
 }
