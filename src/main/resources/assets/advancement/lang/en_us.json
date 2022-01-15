@@ -2,6 +2,7 @@
   "item.advancement.amethyst": "Amethyst",
   "item.advancement.ruby": "Ruby",
   "item.advancement.sapphire": "Sapphire",
+  "item.advancement.celestial_crystal": "Celestial Crystal",
   "item.advancement.platinum_ingot": "Platinum Ingot",
   "item.advancement.three_crystal_pickaxe": "Three-Crystal Pickaxe",
   "item.advancement.three_crystal_sword": "Three-Crystal Sword",
@@ -13,6 +14,7 @@
   "block.advancement.platinum_ore": "Platinum Ore",
   "block.advancement.ruby_ore": "Ruby Ore",
   "block.advancement.sapphire_ore": "Sapphire Ore",
+  "block.advancement.celestial_ore": "Celestial Crystal Ore",
 
   "itemGroup.advancement_mod": "Advancement Mod"
 }

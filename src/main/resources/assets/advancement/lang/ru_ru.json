@@ -2,6 +2,7 @@
   "item.advancement.amethyst": "Аметист",
   "item.advancement.ruby": "Рубин",
   "item.advancement.sapphire": "Сапфир",
+  "item.advancement.celestial_crystal": "Кристалл небожителя",
   "item.advancement.platinum_ingot": "Платиновый слиток",
   "item.advancement.three_crystal_pickaxe": "Трекристальная кирка",
   "item.advancement.three_crystal_sword": "Трекристальный меч",
@@ -13,6 +14,7 @@
   "block.advancement.platinum_ore": "Платиновая руда",
   "block.advancement.ruby_ore": "Рубиновая руда",
   "block.advancement.sapphire_ore": "Сапфировая руда",
+  "block.advancement.celestial_ore": "Руда кристалла небожителя",
 
   "itemGroup.advancement_mod": "Advancement Mod"
 }

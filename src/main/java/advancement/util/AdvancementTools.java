@@ -11,15 +11,17 @@ public enum AdvancementTools implements IItemTier {
     THREE_CRYSTAL_PICKAXE(4, 3000, 15.0f, 4.0f, 15, () -> {
         return Ingredient.of(ItemRegistry.platinum_ingot);
     }),
-    THREE_CRYSTAL_SWORD(4, 3000, 4.0f, 15.0f, 15, () -> {
+    THREE_CRYSTAL_SWORD(4, 3000, 4.0f, 12.0f, 15, () -> {
         return Ingredient.of(ItemRegistry.platinum_ingot);
     }),
-    THREE_CRYSTAL_AXE(4, 3000, 15.0f, 9.0f, 15, () -> {
+    THREE_CRYSTAL_AXE(4, 3000, 15.0f, 7.0f, 15, () -> {
         return Ingredient.of(ItemRegistry.platinum_ingot);
     }),
     THREE_CRYSTAL_SHOVEL(4, 3000, 15.0f, 4.0f, 15, () -> {
         return Ingredient.of(ItemRegistry.platinum_ingot);
     });
+
+    //TODO: improved version of TCSword that is able to attack on right mouse click while in other hand
 
     private final int harvestLevel;
     private final int maxUses;

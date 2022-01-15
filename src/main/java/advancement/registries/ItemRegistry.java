@@ -27,6 +27,10 @@ public class ItemRegistry {
     @ObjectHolder("platinum_ingot")
     public static final Item platinum_ingot = null;
 
+    //end ore
+    @ObjectHolder("celestial_crystal")
+    public static final Item celestial_crystal = null;
+
     //three-crystal items
     @ObjectHolder("three_crystal_pickaxe")
     public static final Item three_crystal_pickaxe = null;
@@ -47,6 +51,7 @@ public class ItemRegistry {
         register(e, new ItemMod("ruby"));
         register(e, new ItemMod("platinum_ingot"));
         register(e, new ItemMod("sapphire"));
+        register(e, new ItemMod("celestial_crystal"));
         register(e, new ItemModPickaxe(AdvancementTools.THREE_CRYSTAL_PICKAXE, "three_crystal_pickaxe", -1.4f));
         register(e, new ItemModSword(AdvancementTools.THREE_CRYSTAL_SWORD, "three_crystal_sword", 1.6f));
         register(e, new ItemModAxe(AdvancementTools.THREE_CRYSTAL_AXE, "three_crystal_axe", -2.3f));

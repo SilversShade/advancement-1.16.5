@@ -22,11 +22,12 @@ public class BlockRegistry {
     private static final int IRON_HARV = 2;
     private static final int DIAMOND_HARV = 3;
     private static final int NETHERITE_HARV = 4;
+    private static final int CELESTIAL_HARV = 5;
 
     public static List<Item> blockItems = new ArrayList<>();
     private static final List<Block> blocks = new ArrayList<>();
 
-    //ore
+    //ore overworld
     @ObjectHolder("amethyst_ore")
     public static final Block amethyst_ore = null;
     @ObjectHolder("ruby_ore")
@@ -36,6 +37,10 @@ public class BlockRegistry {
     @ObjectHolder("platinum_ore")
     public static final Block platinum_ore = null;
 
+    //ore end
+    @ObjectHolder("celestial_ore")
+    public static final Block celestial_ore = null;
+
     @SubscribeEvent
     public static void registerBlocks(final RegistryEvent.Register<Block> e) {
         AdvancementMod.LOGGER.info("[Advancement Mod] Registering Blocks");
@@ -44,6 +49,7 @@ public class BlockRegistry {
         register(e, new BlockMod("ruby_ore", Block.Properties.of(Material.STONE).requiresCorrectToolForDrops().harvestLevel(IRON_HARV).harvestTool(ToolType.PICKAXE).strength(2.0F, 2000.0f).sound(SoundType.METAL)));
         register(e, new BlockMod("sapphire_ore", Block.Properties.of(Material.STONE).requiresCorrectToolForDrops().harvestLevel(IRON_HARV).harvestTool(ToolType.PICKAXE).strength(2.0F, 2000.0f).sound(SoundType.METAL)));
         register(e, new BlockMod("platinum_ore", Block.Properties.of(Material.STONE).requiresCorrectToolForDrops().harvestLevel(DIAMOND_HARV).harvestTool(ToolType.PICKAXE).strength(3.0F, 2000.0f).sound(SoundType.METAL)));
+        register(e, new BlockMod("celestial_ore", Block.Properties.of(Material.STONE).requiresCorrectToolForDrops().harvestLevel(NETHERITE_HARV).harvestTool(ToolType.PICKAXE).strength(5.0F, 2000.0f).sound(SoundType.METAL)));
     }
 
     private static void register(RegistryEvent.Register<Block> event, Block block) {
