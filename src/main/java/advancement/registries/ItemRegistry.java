@@ -36,6 +36,8 @@ public class ItemRegistry {
     public static final Item three_crystal_axe = null;
     @ObjectHolder("three_crystal_shovel")
     public static final Item three_crystal_shovel = null;
+    @ObjectHolder("three_crystal_hoe")
+    public static final Item three_crystal_hoe = null;
 
     @SubscribeEvent
     public static void registerItems(final RegistryEvent.Register<Item> e) {
@@ -49,6 +51,7 @@ public class ItemRegistry {
         register(e, new ItemModSword(AdvancementTools.THREE_CRYSTAL_SWORD, "three_crystal_sword", 1.6f));
         register(e, new ItemModAxe(AdvancementTools.THREE_CRYSTAL_AXE, "three_crystal_axe", -2.3f));
         register(e, new ItemModShovel(AdvancementTools.THREE_CRYSTAL_SHOVEL, "three_crystal_shovel", -1.2f));
+        register(e, new ItemModHoe(AdvancementTools.THREE_CRYSTAL_PICKAXE, "three_crystal_hoe", -0.6f));
     }
 
     private static void register(RegistryEvent.Register<Item> event, Item item) {
