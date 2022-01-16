@@ -19,6 +19,9 @@ public enum AdvancementTools implements IItemTier {
     }),
     THREE_CRYSTAL_SHOVEL(4, 3000, 15.0f, 4.0f, 15, () -> {
         return Ingredient.of(ItemRegistry.platinum_ingot);
+    }),
+    THREE_CRYSTAL_MULTITOOL(4, 4000, 15.0f, 7.0f, 15, () -> {
+        return Ingredient.of(ItemRegistry.platinum_ingot);
     });
 
     //TODO: improved version of TCSword that is able to attack on right mouse click while in other hand

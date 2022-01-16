@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+        "item": "advancement:three_crystal_axe"
+    },
+    {
+        "item": "advancement:three_crystal_pickaxe"
+    },
+    {
+        "item": "advancement:three_crystal_shovel"
+    },
+    {
+        "item": "advancement:three_crystal_hoe"
+    }
+  ],
+  "result": {
+      "item": "advancement:three_crystal_multitool"
+  }
+}

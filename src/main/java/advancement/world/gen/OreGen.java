@@ -19,7 +19,8 @@ public class OreGen {
 
     public static void generateOres(final BiomeLoadingEvent event) {
         if (event.getCategory().equals(Biome.Category.THEEND)) {
-            oreGen(event.getGeneration(), END_STONE_FILLER, BlockRegistry.celestial_ore.defaultBlockState(), 3, 5, 80, 40);
+            oreGen(event.getGeneration(), END_STONE_FILLER,
+                    BlockRegistry.celestial_ore.defaultBlockState(), 3, 5, 80, 40);
         }
         else if (event.getCategory().equals(Biome.Category.NETHER)) {
 

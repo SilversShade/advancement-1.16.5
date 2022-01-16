@@ -4,14 +4,11 @@ import advancement.AdvancementMod;
 import advancement.items.*;
 import advancement.util.AdvancementTools;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
+import net.minecraft.item.Rarity;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.ObjectHolder;
-
-import java.util.ArrayList;
-import java.util.List;
 
 @Mod.EventBusSubscriber(modid = AdvancementMod.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
 @ObjectHolder(AdvancementMod.MOD_ID)
@@ -42,6 +39,8 @@ public class ItemRegistry {
     public static final Item three_crystal_shovel = null;
     @ObjectHolder("three_crystal_hoe")
     public static final Item three_crystal_hoe = null;
+    @ObjectHolder("three_crystal_multitool")
+    public static final Item three_crystal_multitool = null;
 
     @SubscribeEvent
     public static void registerItems(final RegistryEvent.Register<Item> e) {
@@ -52,11 +51,12 @@ public class ItemRegistry {
         register(e, new ItemMod("platinum_ingot"));
         register(e, new ItemMod("sapphire"));
         register(e, new ItemMod("celestial_crystal"));
-        register(e, new ItemModPickaxe(AdvancementTools.THREE_CRYSTAL_PICKAXE, "three_crystal_pickaxe", -1.4f));
-        register(e, new ItemModSword(AdvancementTools.THREE_CRYSTAL_SWORD, "three_crystal_sword", 1.6f));
-        register(e, new ItemModAxe(AdvancementTools.THREE_CRYSTAL_AXE, "three_crystal_axe", -2.3f));
-        register(e, new ItemModShovel(AdvancementTools.THREE_CRYSTAL_SHOVEL, "three_crystal_shovel", -1.2f));
-        register(e, new ItemModHoe(AdvancementTools.THREE_CRYSTAL_PICKAXE, "three_crystal_hoe", -0.6f));
+        register(e, new ItemModPickaxe(AdvancementTools.THREE_CRYSTAL_PICKAXE, Rarity.COMMON, "three_crystal_pickaxe", -1.4f));
+        register(e, new ItemModSword(AdvancementTools.THREE_CRYSTAL_SWORD, Rarity.COMMON, "three_crystal_sword", 1.6f));
+        register(e, new ItemModAxe(AdvancementTools.THREE_CRYSTAL_AXE, Rarity.COMMON, "three_crystal_axe", -2.3f));
+        register(e, new ItemModShovel(AdvancementTools.THREE_CRYSTAL_SHOVEL, Rarity.COMMON, "three_crystal_shovel", -1.2f));
+        register(e, new ItemModHoe(AdvancementTools.THREE_CRYSTAL_PICKAXE, Rarity.COMMON, "three_crystal_hoe", -0.6f));
+        register(e, new ThreeCrystalMultitool("three_crystal_multitool", Rarity.COMMON, AdvancementTools.THREE_CRYSTAL_MULTITOOL));
     }
 
     private static void register(RegistryEvent.Register<Item> event, Item item) {
