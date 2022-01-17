@@ -22,9 +22,10 @@ public enum AdvancementTools implements IItemTier {
     }),
     THREE_CRYSTAL_MULTITOOL(4, 4000, 15.0f, 7.0f, 15, () -> {
         return Ingredient.of(ItemRegistry.platinum_ingot);
+    }),
+    CELESTIAL_SWORD(5, 4000, 5.0f, 20.0f, 22, () -> {
+        return Ingredient.of(ItemRegistry.celestial_crystal);
     });
-
-    //TODO: improved version of TCSword that is able to attack on right mouse click while in other hand
 
     private final int harvestLevel;
     private final int maxUses;

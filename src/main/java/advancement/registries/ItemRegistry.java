@@ -42,6 +42,10 @@ public class ItemRegistry {
     @ObjectHolder("three_crystal_multitool")
     public static final Item three_crystal_multitool = null;
 
+    //celestial items
+    @ObjectHolder("celestial_sword")
+    public static final Item celestial_sword = null;
+
     @SubscribeEvent
     public static void registerItems(final RegistryEvent.Register<Item> e) {
         AdvancementMod.LOGGER.info("[Advancement Mod] Registering Items");
@@ -57,6 +61,7 @@ public class ItemRegistry {
         register(e, new ItemModShovel(AdvancementTools.THREE_CRYSTAL_SHOVEL, Rarity.COMMON, "three_crystal_shovel", -1.2f));
         register(e, new ItemModHoe(AdvancementTools.THREE_CRYSTAL_PICKAXE, Rarity.COMMON, "three_crystal_hoe", -0.6f));
         register(e, new ThreeCrystalMultitool("three_crystal_multitool", Rarity.COMMON, AdvancementTools.THREE_CRYSTAL_MULTITOOL));
+        register(e, new CelestialSword(AdvancementTools.CELESTIAL_SWORD, Rarity.RARE, "celestial_sword", 1.6f));
     }
 
     private static void register(RegistryEvent.Register<Item> event, Item item) {

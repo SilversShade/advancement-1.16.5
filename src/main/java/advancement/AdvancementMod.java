@@ -23,6 +23,8 @@ import java.util.stream.Collectors;
 @Mod(AdvancementMod.MOD_ID)
 public class AdvancementMod
 {
+    //TODO: creating texture for celestial sword, maybe adjusting stats for it
+
     public static final String MOD_ID = "advancement";
     public static final Logger LOGGER = LogManager.getLogger();
     public static final ItemGroup ADVANCEMENT_TAB = new AdvancementTab("advancement_mod");
