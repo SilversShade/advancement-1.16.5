@@ -46,8 +46,17 @@ public class CelestialSword extends ItemModSword {
                 return ActionResult.fail(player.getItemInHand(hand));
             }
             else {
-                player.addEffect(new EffectInstance(Effects.ABSORPTION, 200, 0));
-                player.addEffect(new EffectInstance(Effects.DAMAGE_BOOST, 200, 0));
+                int amplifier, duration;
+                if (player.getHealth() <= 5.0) {
+                    duration = 400;
+                    amplifier = 1;
+                }
+                else {
+                    duration = 200;
+                    amplifier = 0;
+                }
+                player.addEffect(new EffectInstance(Effects.ABSORPTION, duration, amplifier));
+                player.addEffect(new EffectInstance(Effects.DAMAGE_BOOST, duration, amplifier));
                 Cooldown.changeCooldown(true);
                 changeAfterDelay();
                 return super.use(world, player, hand);
