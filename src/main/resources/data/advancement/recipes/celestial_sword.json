@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CCC",
+    "CSC",
+    "PDP"
+  ],
+  "key": {
+    "S": {
+      "item": "advancement:three_crystal_sword"
+    },
+    "D": {
+      "item": "minecraft:diamond"
+    },
+    "C": {
+      "item": "advancement:celestial_crystal"
+    },
+    "P": {
+      "item": "advancement:platinum_ingot"
+    }
+  },
+  "result": {
+    "item": "advancement:celestial_sword"
+  }
+}
