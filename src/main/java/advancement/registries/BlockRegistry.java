@@ -41,6 +41,8 @@ public class BlockRegistry {
     @ObjectHolder("celestial_ore")
     public static final Block celestial_ore = null;
 
+    //custom blocks
+
     @SubscribeEvent
     public static void registerBlocks(final RegistryEvent.Register<Block> e) {
         AdvancementMod.LOGGER.info("[Advancement Mod] Registering Blocks");
