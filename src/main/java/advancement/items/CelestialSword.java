@@ -14,7 +14,7 @@ import net.minecraft.world.World;
 
 import java.util.*;
 
-class Cooldown extends TimerTask {
+final class Cooldown extends TimerTask {
     private static boolean cooldown = false;
 
     @Override
@@ -31,7 +31,7 @@ class Cooldown extends TimerTask {
     }
 }
 
-public class CelestialSword extends ItemModSword {
+public final class CelestialSword extends ItemModSword {
     public CelestialSword (IItemTier tier, Rarity rarity, String name, float attackSpeedModifier) {
         super(tier, rarity, name, attackSpeedModifier);
     }
@@ -65,7 +65,7 @@ public class CelestialSword extends ItemModSword {
         return ActionResult.fail(player.getItemInHand(hand));
     }
 
-    public void changeAfterDelay() {
+    private void changeAfterDelay() {
         Timer cooldownTimer = new Timer();
         Cooldown cooldownChanger = new Cooldown();
         cooldownTimer.schedule(cooldownChanger, 30000);

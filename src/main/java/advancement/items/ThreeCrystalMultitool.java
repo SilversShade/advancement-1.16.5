@@ -11,7 +11,7 @@ import net.minecraftforge.common.ToolType;
 
 import java.util.Set;
 
-public class ThreeCrystalMultitool extends ToolItem {
+public final class ThreeCrystalMultitool extends ToolItem {
     private static final Set<Block> USED_WITH = ImmutableSet.of();
 
     public ThreeCrystalMultitool(String name, Rarity rarity, IItemTier tier) {

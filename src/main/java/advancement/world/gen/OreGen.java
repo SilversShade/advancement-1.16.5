@@ -33,7 +33,7 @@ public class OreGen {
             oreGen(event.getGeneration(), OreFeatureConfig.FillerBlockType.NATURAL_STONE,
                     BlockRegistry.sapphire_ore.defaultBlockState(), 3, 10, 35, 6);
             oreGen(event.getGeneration(), OreFeatureConfig.FillerBlockType.NATURAL_STONE,
-                    BlockRegistry.platinum_ore.defaultBlockState(), 3, 5, 20, 5);
+                    BlockRegistry.platinum_ore.defaultBlockState(), 3, 5, 25, 5);
         }
     }
 
