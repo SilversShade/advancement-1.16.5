@@ -45,6 +45,8 @@ public class ItemRegistry {
     //celestial items
     @ObjectHolder("celestial_sword")
     public static final Item celestial_sword = null;
+    @ObjectHolder("celestial_pickaxe")
+    public static final Item celestial_pickaxe = null;
 
     @SubscribeEvent
     public static void registerItems(final RegistryEvent.Register<Item> e) {
@@ -62,6 +64,7 @@ public class ItemRegistry {
         register(e, new ItemModHoe(AdvancementTools.THREE_CRYSTAL_PICKAXE, Rarity.COMMON, "three_crystal_hoe", -0.6f));
         register(e, new ThreeCrystalMultitool("three_crystal_multitool", Rarity.COMMON, AdvancementTools.THREE_CRYSTAL_MULTITOOL));
         register(e, new CelestialSword(AdvancementTools.CELESTIAL_SWORD, Rarity.RARE, "celestial_sword", 1.6f));
+        register(e, new CelestialPickaxe(AdvancementTools.CELESTIAL_PICKAXE, Rarity.RARE, "celestial_pickaxe", -1.0f));
     }
 
     private static void register(RegistryEvent.Register<Item> event, Item item) {

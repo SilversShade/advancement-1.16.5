@@ -1,7 +1,9 @@
 package advancement.items;
 
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.item.*;
+import net.minecraft.item.IItemTier;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.Rarity;
 import net.minecraft.potion.EffectInstance;
 import net.minecraft.potion.Effects;
 import net.minecraft.util.ActionResult;
@@ -11,9 +13,10 @@ import net.minecraft.util.text.TextComponent;
 import net.minecraft.util.text.TextFormatting;
 import net.minecraft.world.World;
 
-import java.util.*;
+import java.util.Timer;
+import java.util.TimerTask;
 
-final class CooldownSword extends TimerTask {
+final class CooldownPickaxe extends TimerTask {
     private static boolean cooldown = false;
 
     @Override
@@ -26,37 +29,30 @@ final class CooldownSword extends TimerTask {
     }
 
     public static void changeCooldown(boolean change) {
-        CooldownSword.cooldown = change;
+        CooldownPickaxe.cooldown = change;
     }
 }
 
-public final class CelestialSword extends ItemModSword {
-    public CelestialSword (IItemTier tier, Rarity rarity, String name, float attackSpeedModifier) {
+public class CelestialPickaxe extends ItemModPickaxe {
+    public CelestialPickaxe (IItemTier tier, Rarity rarity, String name, float attackSpeedModifier) {
         super(tier, rarity, name, attackSpeedModifier);
     }
 
     @Override
     public ActionResult<ItemStack> use(World world, PlayerEntity player, Hand hand) {
         if (!world.isClientSide) {
-            if (CooldownSword.isOnCooldown()) {
+            if (CooldownPickaxe.isOnCooldown()) {
                 TextComponent message = new StringTextComponent("Item is on cooldown!");
                 message.withStyle(TextFormatting.DARK_RED);
                 player.sendMessage(message, player.getUUID());
                 return ActionResult.fail(player.getItemInHand(hand));
             }
             else {
-                int amplifier, duration;
-                if (player.getHealth() <= 10.0) {
-                    duration = 400;
-                    amplifier = 1;
-                }
-                else {
-                    duration = 200;
-                    amplifier = 0;
-                }
-                player.addEffect(new EffectInstance(Effects.ABSORPTION, duration, amplifier));
-                player.addEffect(new EffectInstance(Effects.DAMAGE_BOOST, duration, amplifier));
-                CooldownSword.changeCooldown(true);
+                int amplifier = 0;
+                int duration = 200;
+                player.addEffect(new EffectInstance(Effects.DIG_SPEED, duration, amplifier+1));
+                player.addEffect(new EffectInstance(Effects.NIGHT_VISION, duration, amplifier));
+                CooldownPickaxe.changeCooldown(true);
                 changeAfterDelay();
                 return super.use(world, player, hand);
             }
@@ -66,7 +62,7 @@ public final class CelestialSword extends ItemModSword {
 
     private void changeAfterDelay() {
         Timer cooldownTimer = new Timer();
-        CooldownSword cooldownChanger = new CooldownSword();
-        cooldownTimer.schedule(cooldownChanger, 30000);
+        CooldownPickaxe cooldownChanger = new CooldownPickaxe();
+        cooldownTimer.schedule(cooldownChanger, 15000);
     }
 }

@@ -25,6 +25,9 @@ public enum AdvancementTools implements IItemTier {
     }),
     CELESTIAL_SWORD(5, 4000, 5.0f, 20.0f, 22, () -> {
         return Ingredient.of(ItemRegistry.celestial_crystal);
+    }),
+    CELESTIAL_PICKAXE(5, 4000, 22.0f, 5.0f, 22, () -> {
+        return Ingredient.of(ItemRegistry.celestial_crystal);
     });
 
     private final int harvestLevel;
